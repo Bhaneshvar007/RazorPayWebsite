@@ -1,0 +1,964 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-width: 100%;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #04032d;
+    /* height: 100vh; */
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    min-height: 12vh;
+    min-width: 100%;
+    z-index: 10;
+    background: #0f1423;
+    border-bottom: 2px solid #0c2d48;
+}
+
+.navigation .logo {
+    margin-left: 20px;
+}
+
+.navigation .logo h1 img {
+    height: 50px;
+}
+
+.navigation .menu-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    margin: auto 20px auto 0;
+}
+
+.navigation .humbarger {
+    margin-right: 20px;
+    display: none;
+    z-index: 1;
+}
+
+.navigation .humbarger .bar {
+    width: 30px;
+    height: 2px;
+    margin: 7px;
+    background: #b1d4e0;
+}
+
+.navigation .menu-list li a {
+    color: #b1d4e0;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 1s ease, border 1s ease;
+    text-decoration: none;
+    margin: 0 .7vw;
+}
+
+.rightlist {
+    margin-left: 10vw;
+
+}
+
+.rightlist select {
+    padding: 5px 8px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: aliceblue;
+    border: #3b9ded 2px solid;
+}
+
+.rightlist option {
+    background-color: #181c2e;
+    text-transform: capitalize;
+}
+
+.rightlist a {
+    padding: .5vw 1vw;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.832);
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #2480cc;
+    margin: .5vw;
+    text-transform: capitalize;
+}
+
+#signUp {
+    background-color: #3b9ded;
+    border: white 2px solid;
+}
+
+/* ====================
+    Intro Section
+  =======================*/
+
+.intro-section {
+    display: flex;
+    color: white;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    margin-top: 3vw;
+}
+
+.left {
+    width: 50%;
+    margin-left: 1vw;
+}
+
+.left h1 {
+    font-size: 4.5vw;
+    text-transform: capitalize;
+}
+
+.left p {
+    font-family: cursive;
+    font-size: 1vw;
+    margin-bottom: 2vw;
+}
+
+#signUp {
+    background-color: #3b9ded;
+    border: 2px solid white;
+    color: white;
+    text-transform: capitalize;
+    padding: .8vw 1vw;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.right {
+    width: 50%;
+}
+
+.right img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.paymentGets {
+    padding: 2vw;
+}
+
+.paymentGets .heading {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 2vw;
+}
+
+.paymentget {
+    display: flex;
+    align-items: center;
+    border: .5px solid gray;
+    margin: 2vw;
+    padding: 2vw;
+    border-radius: 10px;
+}
+
+.pleft {
+    width: 50%;
+    text-transform: capitalize;
+}
+
+.pleft h2 {
+    font-size: 2.2vw;
+}
+
+.pmid {
+    margin: 1.5vw 0;
+}
+
+.pbottom {
+    display: flex;
+    gap: 1.5vw;
+}
+
+.pmid p span {
+    color: green;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+.knowMore {
+    border: 1px solid gray;
+    padding: .5vw 1vw;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #201f52;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.knowMore:hover {
+    background-color: #a7a2a26d;
+}
+
+.pright {
+    width: 50%;
+}
+
+.pright img {
+    width: 100%;
+    height: 100%;
+}
+
+.Cards {
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 300px;
+    width: 320px;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.599);
+    transition: .5s;
+}
+
+.card h1 {
+    margin-top: 2.5vw;
+    text-transform: capitalize;
+}
+
+.card p {
+    margin: 1.5vw;
+}
+
+.card a {
+    background-color: #2480cc;
+    color: white;
+}
+
+.card:hover {
+    scale: 1.02;
+}
+
+.cardBottom {
+    height: 60px;
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background: linear-gradient(20deg, rgb(116, 139, 209), rgb(255, 255, 255));
+}
+
+.cardBottom p span {
+    color: rgb(19, 48, 134);
+    font-weight: bold;
+}
+
+.BusinessBankingS {
+    /* height: 200vh; */
+    width: 120vw;
+    margin-left: -5vw;
+    color: white;
+    background-color: #181c2e;
+    rotate: 5deg;
+    padding: 3vw;
+    margin-top: 4vw;
+}
+
+.BusinessBankingS h2 {
+    text-align: center;
+    margin-top: 5vw;
+}
+
+.BusinessBanking {
+    rotate: -5deg;
+}
+
+.BusinessBankingsubpart {
+    display: flex;
+    border: 2px solid white;
+    padding: 2vw 5vw;
+    width: 80%;
+    margin: 2vw 3vw;
+}
+
+.Bleft {
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    width: 50%;
+}
+
+.Bleft h4 {
+    font-size: 2vw;
+}
+
+.Bleft h1 {
+    font-size: 3vw;
+}
+
+.Bleft h1 span {
+    color: rgb(214, 92, 44);
+    font-size: 4vw;
+}
+
+.Bmid p span {
+    color: green;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+.Bbottom button {
+    padding: .9vw 1.2vw;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 1vw;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 1vw;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.Bbottom button:hover {
+    background-color: rgba(189, 186, 186, 0.392);
+}
+
+.Bright {
+    width: 50%;
+}
+
+.Bright img {
+    width: 100%;
+    height: 100%;
+}
+
+.bCard {
+    display: flex;
+    gap: 5vw;
+    margin-left: 8vw;
+}
+
+.bussFooter {
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 80%;
+    margin: 2vw 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bussFooter button {
+    background-color: royalblue;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: .5vw 1vw;
+    margin-left: 1vw;
+    border-radius: 5px;
+}
+
+.ProductSuite {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+    margin: 4vw 10vw;
+
+}
+
+.ProductSuite .pcard:nth-child(1) {
+    border: none;
+    font-size: 1.8vw;
+}
+
+.ProductSuite .pcard:nth-child(1) span {
+    color: #3b9ded;
+    font-weight: bold;
+    font-size: 5vw;
+}
+
+.pcard {
+    border: 1px solid rgb(50, 49, 49);
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 1vw;
+    transition: .5s;
+    /* margin-left: 2vw; */
+}
+
+.pcard:hover {
+    scale: 1.05;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.567);
+    border: none;
+}
+
+.ProductSuite .pcard:nth-child(1) {
+    box-shadow: none;
+}
+
+.pcard h2 {
+    font-size: 2.3vw;
+    margin-top: 1vw;
+}
+
+.pcard .btn {
+    color: #256293;
+    font-weight: bold;
+    font-size: 2vw;
+    position: relative;
+}
+
+.pcard .btn:hover {
+    text-decoration: underline;
+}
+
+
+.pcard img {
+    opacity: 0;
+    height: 300px;
+    position: absolute;
+    transition: 1s;
+}
+
+.pcard:hover img {
+    opacity: 1;
+
+}
+
+.fetureContianer {
+    /* height: 120vh; */
+    width: 120%;
+    margin-left: -3vw;
+    padding: 4vw 5vw;
+    background: linear-gradient(45deg, #0f55b3, #2377c9);
+    rotate: -5deg;
+}
+
+.featureSection {
+    rotate: 5deg;
+}
+
+.head {
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+}
+
+#feature {
+    margin-bottom: 1vw;
+}
+
+.fetureBody {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+    margin: 2vw;
+}
+
+.feturecard {
+    height: 250px;
+    width: 280px;
+    padding: 1vw;
+    border-radius: 10px;
+    color: white;
+    transition: .5s;
+}
+
+.feturecard h2 {
+    margin: 1vw 0;
+}
+
+.feturecard:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.452);
+}
+
+.fetureFooter {
+    margin: 10vw 5vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+
+}
+
+.ffooterLeft {
+    width: 50%;
+    text-transform: capitalize;
+}
+
+.ffooterLeft h2 {
+    font-size: 3vw;
+}
+
+.ffooterLeft p {
+    margin: 1vw 0;
+}
+
+.ffooterLeft button {
+    padding: 1vw 2vw;
+}
+
+.ffooterRight {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+    /* box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45) inset, */
+    /* 0px 25px 20px -20px rgba(0, 0, 0, 0.45) inset; */
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10%);
+    }
+}
+
+
+.ffooterRight img {
+    height: 80px;
+}
+
+.ffooterRight img:hover {
+    scale: 1.1;
+}
+
+footer {
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+}
+
+.footerBox img {
+    width: 200px;
+}
+
+.footerBox {
+    width: 280px;
+}
+
+.footerBox p i {
+    font-size: 11px;
+}
+
+.item {
+    margin: 1vw 0;
+}
+
+.item h2 {
+    font-size: 1.5vw;
+    margin: 5px 0;
+}
+
+.item p {
+    text-transform: capitalize;
+    color: #2c7ac8;
+}
+
+.item p:hover {
+    color: #444;
+}
+
+.itemX img {
+    height: 40px;
+    width: 40px;
+    transition: .5s;
+}
+
+.itemX img:hover {
+    scale: 1.05;
+}
+
+.itemX p {
+    color: #555;
+}
+
+/* ====================
+    Responsive Section
+  =======================*/
+
+/* Tablet desktop :768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navigation .menu-list {
+        width: 60%;
+    }
+
+    .navigation .menu-list li a {
+        font-size: 1rem;
+    }
+
+}
+
+/* Large Mobile :480px. */
+
+@media only screen and (max-width: 767px) {
+
+    .navigation .menu-list {
+        position: absolute;
+        top: 12vh;
+        min-width: 100%;
+        background: rgba(15, 20, 35, 0.99);
+        text-align: center;
+        display: none;
+    }
+
+    .navigation .menu-list li {
+        display: block;
+    }
+
+    .navigation .menu-list li a {
+        display: block;
+        padding: 20px;
+        transition: color 1s ease, padding 1s ease, background-color 1s ease;
+
+    }
+
+    .navigation .menu-list li a:hover {
+        color: #b1d4e0;
+        padding-left: 30px;
+        background: rgba(177, 212, 224, 0.2);
+    }
+
+
+    .navigation .humbarger {
+        display: block;
+    }
+
+    .intro-section .intro-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .intro-section .intro-content h6 {
+        font-size: 1.4rem;
+    }
+
+    .intro-section .intro-content .changing {
+        font-size: 1.5rem;
+    }
+
+    .intro-section .intro-content .btn a {
+        font-size: 1.25rem;
+    }
+
+}
+
+
+/* small mobile :320px. */
+
+@media only screen and (max-width: 400px) {
+
+    .navigation {
+        justify-content: space-between;
+    }
+
+    .navigation .logo h1 img {
+        height: 30px;
+    }
+
+    .rightlist {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+        flex-direction: column;
+        background-color: #04032d;
+        height: 60vh;
+        width: 100%;
+        transform: translateY(-300%);
+        transition: .5s;
+    }
+
+    #LoginBtn {
+        padding: 2vw 8vw;
+    }
+
+    #signUp {
+        padding: 1.8vw 6vw;
+    }
+
+    .menuIcon {
+        display: flex;
+    }
+
+    .intro-section {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 5vw;
+    }
+
+    .left {
+        width: 100%;
+        margin: 2vw;
+    }
+
+    .left h1 {
+        font-size: 8vw;
+    }
+
+    .left p {
+        font-size: 3.5vw;
+        margin: 5vw 0;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .paymentget {
+        flex-direction: column;
+    }
+
+    .pleft {
+        width: 100%;
+    }
+
+    .pleft h2 {
+        font-size: 5vw;
+    }
+
+    .pmid p {
+        font-size: 4vw;
+    }
+
+    .pmid p span {
+        font-size: 5vw;
+    }
+
+    .pbottom a {
+        padding: 1vw;
+        margin-top: 2vw;
+    }
+
+    .pright {
+        width: 100%;
+    }
+
+    .card {
+        height: 45vh;
+    }
+
+    .card p {
+        margin: 5vw 0;
+    }
+
+    .card a {
+        padding: 1.5vw 2vw;
+    }
+
+    .cardBottom {
+        padding: 0 2vw;
+    }
+
+    .cardBottom p {
+        font-size: 4vw;
+    }
+
+    .BusinessBankingS {
+        rotate: 0deg;
+    }
+
+    .BusinessBanking {
+        rotate: 0deg;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -20px;
+
+    }
+
+    .BusinessBanking h2 {
+        width: 85%;
+    }
+
+    .BusinessBankingsubpart {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .Bleft {
+        width: 100%;
+    }
+
+    .Bleft h4 {
+        font-size: 4vw;
+    }
+
+    .Bleft h1 {
+        font-size: 10vw;
+    }
+
+    .Bleft h1 span {
+        font-size: 10vw;
+        margin: 2vw 0;
+    }
+
+    .Bmid p {
+        font-size: 4vw;
+        width: 100%;
+        margin: 1vw;
+    }
+
+    .Bmid p span {
+        font-size: 4vw;
+    }
+
+    .Bbottom {
+        /* margin-top: 3vw; */
+    }
+
+    .Bbottom button {
+        padding: 3vw 5vw;
+        font-size: 3vw;
+    }
+
+    .Bright {
+        width: 100%;
+    }
+
+    .bCard {
+        flex-direction: column;
+        margin-left: -15px;
+    }
+
+    .bussFooter {
+        flex-direction: column;
+        padding: 1vw;
+        margin-left: 5px;
+    }
+
+    .bussFooter button {
+        padding: 2vw 3vw;
+        font-size: 4vw;
+        margin-top: 5px;
+    }
+
+    .ProductSuite .pcard:nth-child(1) {
+        height: 100px;
+    }
+
+    .pcard {
+        height: 200px;
+    }
+
+    .pcard h1 {
+        font-size: 8vw;
+    }
+
+    .pcard h1 span {
+        font-size: 10vh;
+    }
+
+    .pcard h2 {
+        font-size: 5vw;
+    }
+
+    .pcard p {
+        font-size: 4vw;
+    }
+
+    .pcard .btn {
+        font-size: 6vw;
+    }
+
+    .fetureContianer {
+        rotate: 0deg;
+    }
+
+    .featureSection {
+        rotate: 0deg;
+    }
+
+    #feature {
+        font-size: 15vw;
+    }
+
+    .head {
+        width: 80%;
+    }
+
+    .feturecard {
+        height: 200px;
+        padding: 2vw;
+        border: 2px solid gray;
+    }
+
+    .fetureFooter {
+        flex-direction: column;
+    }
+
+    .ffooterLeft {
+        width: 100%;
+    }
+
+    .ffooterLeft h2 {
+        font-size: 8vw;
+    }
+
+    .ffooterLeft p {
+        font-size: 4vw;
+    }
+
+    .ffooterRight {
+        width: 100%;
+        margin-top: 10vw;
+    }
+
+    .ffooterRight img {
+        height: 40px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item h2 {
+        font-size: 6vw;
+        color: #444;
+    }
+
+    .item p {
+        font-size: 4vw;
+    }
+
+}
